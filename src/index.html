@@ -13,7 +13,7 @@
     <meta name="keywords" content="Omar Mouqat, Developer, Java, PHP, C, C#, Python, React, HTML, CSS, JavaScript, Spring Boot, Django" />
     <!-- Todo: improve your SEO by adding a small description of you -->
     <meta name="description" content="Omar Mouqat - Software Developer | Passionate about coding, problem-solving, and building innovative applications." />
-
+    <link rel="stylesheet" href="index.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -23,8 +23,6 @@
       defer
       src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
     ></script>
-
-    
   </head>
 
   <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
@@ -68,7 +66,7 @@
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info load-hidden">
               <p class="about-wrapper__info-text">
-                I'm a passionate backend developer with a strong foundation in Java, Python, and PHP. 
+                I'm a passionate backend developer with a strong foundation in Java, Html, Css, JavaScript, Python, and PHP. 
                 I specialize in building robust, scalable, and efficient backend systems and microservices.
                  With extensive experience in frameworks like Spring Boot, Laravel and Django, I thrive on solving 
                  complex technical challenges and optimizing performance. I enjoy working with databases, 
@@ -99,39 +97,41 @@
     <!-- **** Formation Section **** -->
     <section id="formation">
       <div class="container">
-        <h2 class="section-title dark-blue-text">Formation</h2>
-
-        <ul class="formation-list">
+        <h2 class="section-title dark-blue-text" data-sr="enter bottom over 1s">Formation</h2>
+    
+        <ul class="formation-list load-hidden" data-sr="enter bottom over 1s">
           <!-- Formation 1 -->
-          <div>
-            <h2 class="formation-title">Bachelor's Degree in Computer Science</h2>
-            <p class="formation-years">2018-2020</p>
+          <li class="formation-item" data-sr="enter bottom over 1s">
+            <h2 class="formation-title">CPGE Science de technologie industrielle</h2>
+            <p class="formation-years">2021-2023</p>
             <p class="formation-description">
-              Focused on software development, algorithms, and data structures. Emphasized practical problem-solving skills and critical thinking.
+              Classes Preparatoire Salmane Al Farissi
             </p>
-          </div>
-
+          </li>
+    
           <!-- Formation 2 -->
-          <div class="formation-item">
-            <h2 class="formation-title">Certified Web Development Course</h2>
-            <p class="formation-years">2020-2021</p>
+          <li class="formation-item" data-sr="enter bottom over 1s delay 0.4s">
+            <h2 class="formation-title">Licence an Faculté des sciences de Rabat</h2>
+            <p class="formation-years">2023-2024</p>
             <p class="formation-description">
-              Learned front-end and back-end development, including React, Node.js, and databases, with a focus on building dynamic, responsive web applications.
+              Sciences Matématiques et Informatique
             </p>
-          </div>
-
+          </li>
+    
           <!-- Formation 3 -->
-          <div class="formation-item">
-            <h2 class="formation-title">Data Science Workshop</h2>
-            <p class="formation-years">2021</p>
+          <li class="formation-item" data-sr="enter bottom over 1s delay 0.6s">
+            <h2 class="formation-title">Master à Faculté des Sciences de Rabat</h2>
+            <p class="formation-years">2024</p>
             <p class="formation-description">
-              Gained hands-on experience in machine learning, data visualization, and big data tools using Python libraries like Pandas and Scikit-learn.
+              Ingénieurie de dévelopement logiciel et décisionel
             </p>
-          </div>
+          </li>
         </ul>
       </div>
     </section>
+    
     <!-- /END Formation Section -->
+
 
 
     <!-- **** Projects Section **** -->
@@ -144,12 +144,15 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Project Title 0</h3>
+                <h3 class="project-wrapper__text-title">Ecomerce Site</h3>
                 <div>
                   <p class="mb-4">
-                    Describe the project being very specific, you can use the Twitter standard: no more than 280 characters: 
-                    complement the information: the skills learned or reinforced in its realization and how you faced it, 
-                    prove to be proactive in the search for solutions.
+                    I built an e-commerce site with PHP and SQL for buying and renting houses. 
+                    The site allowed users to add, modify, and delete posts (CRUD functionality). 
+                    Users could search for real estate and filter results based on various characteristics. 
+                    Additionally, users could contact the seller via WhatsApp to discuss the house and its 
+                    price.
+                    
                   </p>
                 </div>
                 <a
@@ -305,13 +308,13 @@
       <div class="container">
         <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper load-hidden">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
+          <p class="contact-wrapper__text">For more informations feel free to contact us!</p>
           <a
             rel="noreferrer"
             target="_blank"
             class="cta-btn cta-btn--resume"
             href="mailto:example@email.com"
-            >Call to Action</a
+            >Contact Us</a
           >
         </div>
       </div>
@@ -349,5 +352,21 @@
     </footer>
     <!-- /END Footer Section -->
     <script defer type="module" src="index.js"></script>
+    <!-- ScrollReveal Initialization Script -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (typeof ScrollReveal !== 'undefined') {
+          ScrollReveal().reveal('.formation-item', {
+            duration: 1000,
+            distance: '50px',
+            easing: 'ease-out',
+            origin: 'bottom',
+            interval: 200,
+          });
+        } else {
+          console.error("ScrollReveal is not loaded");
+        }
+      });
+    </script>
   </body>
 </html>

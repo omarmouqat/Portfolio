@@ -1,0 +1,36 @@
+#formation {
+  padding: 50px 0;
+}
+
+.formation-list {
+  padding: 0;
+  list-style-type: none;
+}
+
+.formation-item {
+  margin-bottom: 30px;
+}
+
+.formation-title {
+  margin-bottom: 5px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.formation-years {
+  color: #777;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.formation-description {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=index.61d3354a.css.map */

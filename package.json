@@ -8,7 +8,7 @@
 
   "scripts": {
     "start": "parcel",
-    "build": "parcel build src/index.html --public-url ./",
+    "build": "parcel build src/index.html --public-url /portfolio/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
